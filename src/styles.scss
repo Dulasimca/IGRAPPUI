@@ -1,1 +1,79 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.no-pad-lt {
+    padding-left: 0 !important;
+}
+.no-pad-rt {
+    padding-right: 0 !important;
+}
+.no-pad-top {
+    padding-top: 0 !important;
+}
+.no-pad-btm {
+    padding-bottom: 0 !important;
+}
+
+.dsh-icon-div {
+    border-radius: 5px;
+    border: 1px solid #e3dbdb;
+    text-align: center;
+    margin-right: auto;
+    width: 30% !important;
+}
+.dsh-icons-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(32, 30, 30);
+}
+.to-center {
+    display: flex;
+    justify-content: center;
+}
+.dsh-grid-bg1 {
+    background: #d63384;
+}
+.dsh-grid-bg2 {
+    background: #ffcd36;
+}
+.dsh-grid-bg3 {
+    background: #3bd4f3;
+}
+.dsh-grid-bg4 {
+    background: #4ad3ab;
+}
+.dsh-grid-bg5 {
+    background: #b586cd;
+}
+.dsh-grid-bg6 {
+    background: #459e74;
+}
+.dsh-grid-bg7 {
+    background: #ffe255;
+}
+.dsh-grid-bg8 {
+    background: #dc3545;
+}
+.dsh-grid-bg9 {
+    background: #4770ad;
+}
+.hdr-div {
+    background: #438c41;
+    text-align: center;
+    color: whitesmoke !important;
+}
+.hdr-user-icon {
+    margin-top: 5%;
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 10% !important;
+    height: 25% !important;
+    background: #828385;
+    text-align: end;
+}
