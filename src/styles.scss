@@ -1,5 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@import '../node_modules/font-awesome/css/font-awesome.min.css';
+@import url("../node_modules/primeicons/primeicons.css");
+@import url("../node_modules/primeng/resources/themes/saga-green/theme.css");
+@import url("../node_modules/primeng/resources/primeng.min.css");
 
+html, body { height: 100%; }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
@@ -21,11 +26,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 .dsh-icon-div {
-    border-radius: 5px;
-    border: 1px solid #e3dbdb;
+    border-radius: 10px;
+    border: 5px solid #ffffff;
     text-align: center;
     margin-right: auto;
-    width: 30% !important;
+    box-shadow: 0 2px 1px -1px rgb(0 0 0 / 4%), 0 1px 1px 0 rgb(0 0 0 / 0%), 0 1px 3px 0 rgb(0 0 0 / 4%);
+    // width: 30% !important;
 }
 .dsh-icons-title {
     font-size: 13px;
@@ -43,7 +49,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     background: #ffcd36;
 }
 .dsh-grid-bg3 {
-    background: #3bd4f3;
+    background: #dc3545;
 }
 .dsh-grid-bg4 {
     background: #4ad3ab;
@@ -55,10 +61,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     background: #459e74;
 }
 .dsh-grid-bg7 {
-    background: #ffe255;
+    background: #3bd4f3;
 }
 .dsh-grid-bg8 {
-    background: #dc3545;
+    background: #ffe255;
 }
 .dsh-grid-bg9 {
     background: #4770ad;
@@ -67,13 +73,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     background: #438c41;
     text-align: center;
     color: whitesmoke !important;
+    height: 5rem;
 }
-.hdr-user-icon {
-    margin-top: 5%;
-    border-radius: 50%;
-    border: 2px solid white;
-    width: 10% !important;
-    height: 25% !important;
-    background: #828385;
-    text-align: end;
+.footer {
+    position: fixed;
+    bottom: 0 !important;
+    font-size: 14px;
 }
