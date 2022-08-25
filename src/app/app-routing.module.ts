@@ -5,6 +5,7 @@ import { EcSearchAndApplyCCComponent } from './Forms-Module/E-Services/Encumbran
 import { EcViewECComponent } from './Forms-Module/E-Services/Encumbrance-Certificate/ec-view-ec/ec-view-ec.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'encumbrance-search', component: EcSearchAndApplyCCComponent },
   { path: 'encumbrance-viewEC', component: EcViewECComponent },
