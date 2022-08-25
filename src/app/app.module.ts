@@ -17,6 +17,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { EcSearchAndApplyCCComponent } from './Forms-Module/E-Services/Encumbrance-Certificate/ec-search-and-apply-cc/ec-search-and-apply-cc.component';
 import { EcViewECComponent } from './Forms-Module/E-Services/Encumbrance-Certificate/ec-view-ec/ec-view-ec.component';
+import { MarriageRegistrationComponent } from './Forms-Module/Registration/marriage-registration/marriage-registration.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,9 @@ import { EcViewECComponent } from './Forms-Module/E-Services/Encumbrance-Certifi
     HeaderComponent,
     FooterComponent,
     EcSearchAndApplyCCComponent,
-    EcViewECComponent
+    EcViewECComponent,
+    MarriageRegistrationComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
