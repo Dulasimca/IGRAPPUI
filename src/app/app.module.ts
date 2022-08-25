@@ -21,6 +21,8 @@ import { MarriageRegistrationComponent } from './Forms-Module/Registration/marri
 import { FirmRegistartionComponent } from './Forms-Module/Registration/firm-registartion/firm-registartion.component';
 import { SocietyRegistrationComponent } from './Registration/society-registration/society-registration.component';
 import { CcRequestListComponent } from './E-Services/certified-copy/cc-request-list/cc-request-list.component';
+import { AdjudicationRequestListComponent } from './Forms-Module/Registration/Adjudication-Registration/adjudication-request-list/adjudication-request-list.component';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { CcRequestListComponent } from './E-Services/certified-copy/cc-request-l
     FooterComponent,
     FirmRegistartionComponent,
     SocietyRegistrationComponent,
-    CcRequestListComponent
+    CcRequestListComponent,
+    AdjudicationRequestListComponent,
   ],
   imports: [
     BrowserModule,
