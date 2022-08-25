@@ -8,6 +8,7 @@ import { ButtonModule } from 'primeng/button';
 import { CalendarModule } from 'primeng/calendar';
 import { DropdownModule } from 'primeng/dropdown';
 import { RadioButtonModule } from 'primeng/radiobutton';
+import { TabViewModule } from 'primeng/tabview';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,6 +23,7 @@ import { FirmRegistartionComponent } from './Forms-Module/Registration/firm-regi
 import { SocietyRegistrationComponent } from './Registration/society-registration/society-registration.component';
 import { CcRequestListComponent } from './E-Services/certified-copy/cc-request-list/cc-request-list.component';
 import { AdjudicationRequestListComponent } from './Forms-Module/Registration/Adjudication-Registration/adjudication-request-list/adjudication-request-list.component';
+import { CcSearchAndApplyCcComponent } from './E-Services/certified-copy/cc-search-and-apply-cc/cc-search-and-apply-cc.component';
 
 
 @NgModule({
@@ -38,6 +40,7 @@ import { AdjudicationRequestListComponent } from './Forms-Module/Registration/Ad
     SocietyRegistrationComponent,
     CcRequestListComponent,
     AdjudicationRequestListComponent,
+    CcSearchAndApplyCcComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,7 +53,8 @@ import { AdjudicationRequestListComponent } from './Forms-Module/Registration/Ad
     ButtonModule,
     CalendarModule,
     DropdownModule,
-    RadioButtonModule
+    RadioButtonModule,
+    TabViewModule
   ],
   providers: [],
   bootstrap: [AppComponent]

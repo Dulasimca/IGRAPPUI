@@ -8,6 +8,7 @@ import { FirmRegistartionComponent } from './Forms-Module/Registration/firm-regi
 import { SocietyRegistrationComponent } from './Registration/society-registration/society-registration.component';
 import { AdjudicationRequestListComponent } from './Forms-Module/Registration/Adjudication-Registration/adjudication-request-list/adjudication-request-list.component';
 import { MarriageRegistrationComponent } from './Forms-Module/Registration/marriage-registration/marriage-registration.component';
+import { CcSearchAndApplyCcComponent } from './E-Services/certified-copy/cc-search-and-apply-cc/cc-search-and-apply-cc.component';
 
 
 const routes: Routes = [
@@ -19,7 +20,10 @@ const routes: Routes = [
   { path: 'societ-registration', component: SocietyRegistrationComponent},
   { path: 'request-list', component: CcRequestListComponent},
   { path: 'marriage-registration', component: MarriageRegistrationComponent },
-  { path: 'ad-request-list', component: AdjudicationRequestListComponent }
+  { path: 'ad-request-list', component: AdjudicationRequestListComponent },
+  { path: 'cc-search-apply', component: CcSearchAndApplyCcComponent }
+
+   
 
 
 ];
