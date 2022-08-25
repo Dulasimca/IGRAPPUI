@@ -1,0 +1,74 @@
+<div class="col-12 md:col-12 lg:col-12">
+    <p-panel header="Search Encumbrance Certificate">
+        <div class="col-12 md:col-12 lg:col-12">
+            <form #ecSearchForm="ngForm">
+                <div #row1 class="col-12 md:col-12 lg:col-12">
+                    <div class="p-fluid grid">
+                        <div class="field col-12 md:col-3 lg:col-2">
+                            <span class="p-float-label">
+                                <p-dropdown [options]="zoneOptions" [(ngModel)]="zone" name="_zone">
+                                </p-dropdown>
+                                <label for="_zone">Zone</label>
+                            </span>
+                        </div>
+                        <div class="field col-12 md:col-3 lg:col-2">
+                            <span class="p-float-label">
+                                <p-dropdown [options]="districtOptions" [(ngModel)]="district" name="_district">
+                                </p-dropdown>
+                                <label for="_district">District</label>
+                            </span>
+                        </div>
+                        <div class="field col-12 md:col-3 lg:col-2">
+                            <span class="p-float-label">
+                                <p-dropdown [options]="subRegistrarOptions" [(ngModel)]="subRegistrar"
+                                    name="_subRegistrar">
+                                </p-dropdown>
+                                <label for="_subRegistrar">Sub Registrar Office</label>
+                            </span>
+                        </div>
+                        <div class="field col-12 md:col-3 lg:col-2">
+                            <span class="p-float-label">
+                                <p-calendar [(ngModel)]="ecStartDate" name="_ecStartDate" [showIcon]="true">
+                                </p-calendar>
+                                <label for="_ecStartDate">D.O.B</label>
+                            </span>
+                        </div>
+                        <div class="col-12 md:col-3 lg:col-2">
+                            <span class="p-float-label">
+                                <p-calendar [(ngModel)]="ecEndDate" name="_ecEndDate" [showIcon]="true">
+                                </p-calendar>
+                                <label for="_ecEndDate">D.O.B</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div #row2 class="col-12 md:col-12 lg:col-12">
+                    <div class="field" style="padding-bottom: .5rem;"> Survey Details: </div>
+                    <div class="p-fluid grid">
+                        <div class="field col-12 md:col-3 lg:col-2">
+                            <span class="p-float-label">
+                                <p-dropdown [options]="villageOptions" [(ngModel)]="village" name="_village">
+                                </p-dropdown>
+                                <label for="_village">Village</label>
+                            </span>
+                        </div>
+                        <div class="field col-12 md:col-3 lg:col-2">
+                            <span class="p-float-label">
+                                <input type="text" name="_surveyNo" pInputText
+                                    [(ngModel)]="surveyNo" required />
+                                <label for="_surveyNo">Survey No</label>
+                            </span>
+                        </div>
+                        <div class="field col-12 md:col-3 lg:col-2">
+                            <span class="p-float-label">
+                                <input type="text" name="_subDivisionNo" pInputText
+                                    [(ngModel)]="subDivisionNo" required />
+                                <label for="_subDivisionNo">Sub Division No</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </p-panel>
+</div>
