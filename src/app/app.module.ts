@@ -18,6 +18,7 @@ import { FooterComponent } from './footer/footer.component';
 import { EcSearchAndApplyCCComponent } from './Forms-Module/E-Services/Encumbrance-Certificate/ec-search-and-apply-cc/ec-search-and-apply-cc.component';
 import { EcViewECComponent } from './Forms-Module/E-Services/Encumbrance-Certificate/ec-view-ec/ec-view-ec.component';
 import { MarriageRegistrationComponent } from './Forms-Module/Registration/marriage-registration/marriage-registration.component';
+import { AdjudicationRequestListComponent } from './Forms-Module/Registration/Adjudication-Registration/adjudication-request-list/adjudication-request-list.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MarriageRegistrationComponent } from './Forms-Module/Registration/marri
     EcSearchAndApplyCCComponent,
     EcViewECComponent,
     MarriageRegistrationComponent,
-    FooterComponent
+    FooterComponent,
+    AdjudicationRequestListComponent,
   ],
   imports: [
     BrowserModule,
