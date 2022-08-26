@@ -31,6 +31,8 @@ import { ViewTokenAvailabilityComponent } from './Forms-Module/E-Services/view-t
 import { PublicUtilityFormsComponent } from './public-utility-forms/public-utility-forms.component';
 
 import { SocietyRegistrationComponent } from './Forms-Module/Registration/society-registration/society-registration.component';
+import { KnowYourJurisdictionComponent } from './know-your-jurisdiction/know-your-jurisdiction.component';
+import { CitizenCharterComponent } from './citizen-charter/citizen-charter.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +53,8 @@ import { SocietyRegistrationComponent } from './Forms-Module/Registration/societ
     CcSearchAndApplyCcComponent,
     ViewTokenAvailabilityComponent,
     PublicUtilityFormsComponent,
+    KnowYourJurisdictionComponent,
+    CitizenCharterComponent,
   ],
   imports: [
     BrowserModule,

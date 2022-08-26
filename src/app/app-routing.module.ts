@@ -12,6 +12,9 @@ import { MarriageRegistrationComponent } from './Forms-Module/Registration/marri
 import { CcSearchAndApplyCcComponent } from './E-Services/certified-copy/cc-search-and-apply-cc/cc-search-and-apply-cc.component';
 import { ViewTokenAvailabilityComponent } from './Forms-Module/E-Services/view-token-availability/view-token-availability.component';
 import { SocietyRegistrationComponent } from './Forms-Module/Registration/society-registration/society-registration.component';
+import { PublicUtilityFormsComponent } from './public-utility-forms/public-utility-forms.component';
+import { KnowYourJurisdictionComponent } from './know-your-jurisdiction/know-your-jurisdiction.component';
+import { CitizenCharterComponent } from './citizen-charter/citizen-charter.component';
 
 
 const routes: Routes = [
@@ -28,7 +31,10 @@ const routes: Routes = [
   { path: 'ad-request-list', component: AdjudicationRequestListComponent },
   { path: 'cc-search-apply', component: CcSearchAndApplyCcComponent },
   { path: 'token-availability', component: ViewTokenAvailabilityComponent },
-  { path: 'cc-search-apply', component: CcSearchAndApplyCcComponent }
+  { path: 'cc-search-apply', component: CcSearchAndApplyCcComponent },
+  { path: 'public-utility', component: PublicUtilityFormsComponent },
+  { path: 'jurdication', component: KnowYourJurisdictionComponent },
+  { path: 'citizen-charter', component: CitizenCharterComponent },
 
 ];
 
