@@ -28,6 +28,7 @@ import { CcRequestListComponent } from './E-Services/certified-copy/cc-request-l
 import { AdjudicationRequestListComponent } from './Forms-Module/Registration/Adjudication-Registration/adjudication-request-list/adjudication-request-list.component';
 import { CcSearchAndApplyCcComponent } from './E-Services/certified-copy/cc-search-and-apply-cc/cc-search-and-apply-cc.component';
 import { SocietyRegistrationComponent } from './Forms-Module/Registration/society-registration/society-registration.component';
+import { DutyAndFeesComponent } from './duty-and-fees/duty-and-fees.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,8 @@ import { SocietyRegistrationComponent } from './Forms-Module/Registration/societ
     CcRequestListComponent,
     AdjudicationRequestListComponent,
     CcSearchAndApplyCcComponent,
+    DutyAndFeesComponent,
+    
   ],
   imports: [
     BrowserModule,
