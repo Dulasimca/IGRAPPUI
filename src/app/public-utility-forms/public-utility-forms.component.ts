@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PublicUtilityFormsComponent implements OnInit {
 
+  publicUtilityCols: any;
+  publicUtilityData: any[] = [];
+
   constructor() { }
 
   ngOnInit(): void {
+
+    this.publicUtilityCols = [
+      {field: 'Sale/Conveyance deed' , header: 'Title'},
+      {field: 'Englishdoc.pdf' , header: 'English'},
+      {field: 'Tamil.doc.pdf' , header: 'Tamil'}
+
+    ]
   }
 
 }

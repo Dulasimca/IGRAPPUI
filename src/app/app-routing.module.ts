@@ -15,6 +15,10 @@ import { ViewTokenAvailabilityComponent } from './Forms-Module/E-Services/view-t
 import { SocietyRegistrationComponent } from './Forms-Module/Registration/society-registration/society-registration.component';
 import { UserManualComponent } from './user-manual/user-manual.component';
 import { TellMeHowComponent } from './tell-me-how/tell-me-how.component';
+import { PublicUtilityFormsComponent } from './public-utility-forms/public-utility-forms.component';
+import { KnowYourJurisdictionComponent } from './know-your-jurisdiction/know-your-jurisdiction.component';
+import { CitizenCharterComponent } from './citizen-charter/citizen-charter.component';
+import { DutyAndFeesComponent } from './duty-and-fees/duty-and-fees.component';
 
 
 const routes: Routes = [
@@ -30,11 +34,15 @@ const routes: Routes = [
   { path: 'marriage-registration', component: MarriageRegistrationComponent },
   { path: 'ad-request-list', component: AdjudicationRequestListComponent },
   { path: 'cc-search-apply', component: CcSearchAndApplyCcComponent },
+  { path: 'duty-and-fees', component: DutyAndFeesComponent },
   { path: 'cc-birth-death', component: CcBirthDeathComponent},
   { path: 'token-availability', component: ViewTokenAvailabilityComponent },
   { path: 'user-manual', component: UserManualComponent},
-  { path: 'tell-me-how', component: TellMeHowComponent}
-
+  { path: 'tell-me-how', component: TellMeHowComponent},
+  { path: 'cc-search-apply', component: CcSearchAndApplyCcComponent },
+  { path: 'public-utility', component: PublicUtilityFormsComponent },
+  { path: 'jurdication', component: KnowYourJurisdictionComponent },
+  { path: 'citizen-charter', component: CitizenCharterComponent },
 ];
 
 @NgModule({

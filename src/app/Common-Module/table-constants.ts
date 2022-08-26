@@ -18,4 +18,9 @@ export class TableConstants {
         { field: 'fee', header: 'Fee', align: 'left !important'},
     ]
 
+    public static readonly DutyAndFeesColumns = [
+        { field: 'Categories of Document', header: 'Categories of Document', align: 'left !important'},
+        { field: 'Stamp Duty', header: 'Stamp Duty', align: 'left !important'},
+        { field: 'Registration Fee', header: 'Registration Fee', align: 'left !important'},
+    ];
 }

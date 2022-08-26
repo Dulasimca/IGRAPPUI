@@ -1,0 +1,38 @@
+<div class="col-12 md:col-12 lg:col-12">
+    <p-panel header="Know Your Jurisdication">
+        <div class="col-12 md:col-12 lg:col-12">
+            <form #adRequestForm="ngForm">
+                <div>Search Field Offices</div>
+                <div #row1 class="col-12 md:col-12 lg:col-12">
+                    <div class="p-fluid grid">
+                        <div class="field col-12 md:col-3 lg:col-2">
+                            <span class="p-float-label">
+                                <input type="text" name="_streetname" pInputText [(ngModel)]="streetName" required />
+                                <label for="_streetname">Street Name</label>
+                            </span>
+                        </div>
+                        <div>OR</div>
+                        <div class="field col-12 md:col-3 lg:col-2">
+                            <span class="p-float-label">
+                                <input type="text" name="_villagename" pInputText [(ngModel)]="villageName" required />
+                                <label for="_villagename">Village Name</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-12 lg:col-12 to-center">
+                    <button pButton type="button" label="Search"></button>&nbsp;
+                    <button pButton type="button" label="Reset"></button>
+                </div>
+                <div class="col-12 md:col-12 lg:col-12 to-center">
+                    <span>Alphabetical List of SRO</span>
+                    <span>Alphabetical List of DRO</span>
+                    <span>Alphabetical List of SRO</span>
+                </div>
+                <div class="col-12 md:col-12 lg:col-12 to-center height-fit-to-content">
+                    <button pButton type="button" label="Back"></button>
+                </div>
+            </form>
+        </div>
+    </p-panel>
+</div>
