@@ -20,10 +20,12 @@ import { EcSearchAndApplyCCComponent } from './Forms-Module/E-Services/Encumbran
 import { EcViewECComponent } from './Forms-Module/E-Services/Encumbrance-Certificate/ec-view-ec/ec-view-ec.component';
 import { MarriageRegistrationComponent } from './Forms-Module/Registration/marriage-registration/marriage-registration.component';
 import { FirmRegistartionComponent } from './Forms-Module/Registration/firm-registartion/firm-registartion.component';
-import { SocietyRegistrationComponent } from './Registration/society-registration/society-registration.component';
-import { CcRequestListComponent } from './E-Services/certified-copy/cc-request-list/cc-request-list.component';
 import { AdjudicationRequestListComponent } from './Forms-Module/Registration/Adjudication-Registration/adjudication-request-list/adjudication-request-list.component';
-import { CcSearchAndApplyCcComponent } from './E-Services/certified-copy/cc-search-and-apply-cc/cc-search-and-apply-cc.component';
+import { CcBirthDeathComponent } from './Forms-Module/E-Services/certified-copy/cc-birth-death/cc-birth-death.component';
+import { CcSearchAndApplyCcComponent } from './Forms-Module/E-Services/certified-copy/cc-search-and-apply-cc/cc-search-and-apply-cc.component';
+import { CcRequestListComponent } from './Forms-Module/E-Services/certified-copy/cc-request-list/cc-request-list.component';
+import { SocietyRegistrationComponent } from './Forms-Module/Registration/society-registration/society-registration.component';
+
 
 
 @NgModule({
@@ -41,6 +43,7 @@ import { CcSearchAndApplyCcComponent } from './E-Services/certified-copy/cc-sear
     CcRequestListComponent,
     AdjudicationRequestListComponent,
     CcSearchAndApplyCcComponent,
+    CcBirthDeathComponent,
   ],
   imports: [
     BrowserModule,
