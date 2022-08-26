@@ -30,8 +30,11 @@ import { CcSearchAndApplyCcComponent } from './Forms-Module/E-Services/certified
 import { CcRequestListComponent } from './Forms-Module/E-Services/certified-copy/cc-request-list/cc-request-list.component';
 import { ViewTokenAvailabilityComponent } from './Forms-Module/E-Services/view-token-availability/view-token-availability.component';
 import { PublicUtilityFormsComponent } from './public-utility-forms/public-utility-forms.component';
-
 import { SocietyRegistrationComponent } from './Forms-Module/Registration/society-registration/society-registration.component';
+import { UserManualComponent } from './user-manual/user-manual.component';
+import { TellMeHowComponent } from './tell-me-how/tell-me-how.component';
+import { KnowYourJurisdictionComponent } from './know-your-jurisdiction/know-your-jurisdiction.component';
+import { CitizenCharterComponent } from './citizen-charter/citizen-charter.component';
 import { DutyAndFeesComponent } from './duty-and-fees/duty-and-fees.component';
 
 @NgModule({
@@ -51,11 +54,14 @@ import { DutyAndFeesComponent } from './duty-and-fees/duty-and-fees.component';
     CcRequestListComponent,
     AdjudicationRequestListComponent,
     CcSearchAndApplyCcComponent,
-    DutyAndFeesComponent,
-    
+    DutyAndFeesComponent,    
     CcBirthDeathComponent,
     ViewTokenAvailabilityComponent,
     PublicUtilityFormsComponent,
+    UserManualComponent,
+    TellMeHowComponent,
+    KnowYourJurisdictionComponent,
+    CitizenCharterComponent,
   ],
   imports: [
     BrowserModule,
