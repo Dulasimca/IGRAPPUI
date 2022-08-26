@@ -6,7 +6,7 @@
                     <div *ngFor="let i of DutyandFeesList">
                         <div class="col-12 md:col-12 lg:col-12">
                             <p-accordionTab header="{{i.header}}">
-                                <p-table [columns]="dutyAndFeesCols" [value]="i.data" styleClass="p-datatable-gridlines"
+                                <p-table [columns]="i.dutycols" [value]="i.data" styleClass="p-datatable-gridlines"
                                     responsiveLayout="scroll">
                                     <ng-template pTemplate="header" let-columns>
                                         <tr>
