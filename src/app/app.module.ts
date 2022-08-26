@@ -31,6 +31,7 @@ import { ViewTokenAvailabilityComponent } from './Forms-Module/E-Services/view-t
 import { PublicUtilityFormsComponent } from './public-utility-forms/public-utility-forms.component';
 
 import { SocietyRegistrationComponent } from './Forms-Module/Registration/society-registration/society-registration.component';
+import { GuidelineValueComponent } from './guideline-value/guideline-value.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { SocietyRegistrationComponent } from './Forms-Module/Registration/societ
     CcSearchAndApplyCcComponent,
     ViewTokenAvailabilityComponent,
     PublicUtilityFormsComponent,
+    GuidelineValueComponent,
   ],
   imports: [
     BrowserModule,
