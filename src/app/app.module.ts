@@ -8,6 +8,8 @@ import { ButtonModule } from 'primeng/button';
 import { CalendarModule } from 'primeng/calendar';
 import { DropdownModule } from 'primeng/dropdown';
 import { RadioButtonModule } from 'primeng/radiobutton';
+import { AccordionModule } from 'primeng/accordion';
+import { TableModule } from 'primeng/table';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +20,8 @@ import { FooterComponent } from './footer/footer.component';
 import { EcSearchAndApplyCCComponent } from './Forms-Module/E-Services/Encumbrance-Certificate/ec-search-and-apply-cc/ec-search-and-apply-cc.component';
 import { EcViewECComponent } from './Forms-Module/E-Services/Encumbrance-Certificate/ec-view-ec/ec-view-ec.component';
 import { MarriageRegistrationComponent } from './Forms-Module/Registration/marriage-registration/marriage-registration.component';
+import { EcRequestListComponent } from './Forms-Module/E-Services/Encumbrance-Certificate/ec-request-list/ec-request-list.component';
+import { CircularsComponent } from './circulars/circulars.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,9 @@ import { MarriageRegistrationComponent } from './Forms-Module/Registration/marri
     EcSearchAndApplyCCComponent,
     EcViewECComponent,
     MarriageRegistrationComponent,
-    FooterComponent
+    FooterComponent,
+    EcRequestListComponent,
+    CircularsComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +47,9 @@ import { MarriageRegistrationComponent } from './Forms-Module/Registration/marri
     ButtonModule,
     CalendarModule,
     DropdownModule,
-    RadioButtonModule
+    RadioButtonModule,
+    AccordionModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
