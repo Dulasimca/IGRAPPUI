@@ -10,6 +10,7 @@ import { DropdownModule } from 'primeng/dropdown';
 import { RadioButtonModule } from 'primeng/radiobutton';
 import { AccordionModule } from 'primeng/accordion';
 import { TableModule } from 'primeng/table';
+import { TabViewModule } from 'primeng/tabview';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,6 +23,11 @@ import { EcViewECComponent } from './Forms-Module/E-Services/Encumbrance-Certifi
 import { MarriageRegistrationComponent } from './Forms-Module/Registration/marriage-registration/marriage-registration.component';
 import { EcRequestListComponent } from './Forms-Module/E-Services/Encumbrance-Certificate/ec-request-list/ec-request-list.component';
 import { CircularsComponent } from './circulars/circulars.component';
+import { FirmRegistartionComponent } from './Forms-Module/Registration/firm-registartion/firm-registartion.component';
+import { CcRequestListComponent } from './E-Services/certified-copy/cc-request-list/cc-request-list.component';
+import { AdjudicationRequestListComponent } from './Forms-Module/Registration/Adjudication-Registration/adjudication-request-list/adjudication-request-list.component';
+import { CcSearchAndApplyCcComponent } from './E-Services/certified-copy/cc-search-and-apply-cc/cc-search-and-apply-cc.component';
+import { SocietyRegistrationComponent } from './Forms-Module/Registration/society-registration/society-registration.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +40,12 @@ import { CircularsComponent } from './circulars/circulars.component';
     MarriageRegistrationComponent,
     FooterComponent,
     EcRequestListComponent,
-    CircularsComponent
+    CircularsComponent,
+    FirmRegistartionComponent,
+    SocietyRegistrationComponent,
+    CcRequestListComponent,
+    AdjudicationRequestListComponent,
+    CcSearchAndApplyCcComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,7 +60,8 @@ import { CircularsComponent } from './circulars/circulars.component';
     DropdownModule,
     RadioButtonModule,
     AccordionModule,
-    TableModule
+    TableModule,
+    TabViewModule
   ],
   providers: [],
   bootstrap: [AppComponent]

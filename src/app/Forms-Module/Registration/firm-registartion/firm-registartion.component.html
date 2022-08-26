@@ -1,0 +1,37 @@
+<div class="col-12 md:col-12 lg:col-12">
+    <p-panel header="Firm-Registration">
+        <div class="col-12 md:col-12 lg:col-12">
+            <form #ecSearchForm="ngForm">
+                <div #row1 class="col-12 md:col-12 lg:col-12">
+                    <div class="p-fluid grid">
+                        <div class="field col-12 md:col-3 lg:col-2">
+                            <span class="p-float-label">
+                                <input type="text" name="_appno" pInputText
+                                    [(ngModel)]="appNum" required />
+                                <label for="_appno">Application No</label>
+                            </span>
+                        </div>
+                        <div class="field col-12 md:col-3 lg:col-2">
+                            <span class="p-float-label">
+                                <p-dropdown [options]="statusOptions" [(ngModel)]="status" name="_status">
+                                </p-dropdown>
+                                <label for="_status">Status</label>
+                            </span>
+                        </div>
+                        <div class="field col-12 md:col-3 lg:col-2">
+                            <span class="p-float-label">
+                                <p-calendar [(ngModel)]="createdDate" name="_createddate" [showIcon]="true">
+                                </p-calendar>
+                                <label for="_createddate">Created Date</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-12 lg:col-12 to-center">
+                    <button pButton type="button" label="Search"></button>&nbsp;
+                    <button pButton type="button" label="Reset"></button>
+                </div>
+            </form>
+        </div>
+    </p-panel>
+</div>

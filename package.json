@@ -1,6 +1,11 @@
 {
   "name": "igrs-mobile",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "author": "Tryme Tech Development Team",
+  "license": "Apache-2.0",
+  "displayName": "IGRSMobileApplication",
+  "description": "User can handle the all IGRS releated request or issues through this Application ",
+  "main": "index.js",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -20,6 +25,7 @@
     "@angular/platform-browser": "^14.1.0",
     "@angular/platform-browser-dynamic": "^14.1.0",
     "@angular/router": "^14.1.0",
+    "angular-font-awesome": "^3.1.2",
     "font-awesome": "^4.7.0",
     "primeflex": "^3.2.1",
     "primeicons": "^5.0.0",
@@ -39,6 +45,15 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
-    "typescript": "~4.7.2"
+    "typescript": "~4.7.2",
+    "cordova-android": "^10.1.1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "cordova": {
+    "platforms": [
+      "android"
+    ]
   }
 }
