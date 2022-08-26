@@ -8,6 +8,8 @@ import { ButtonModule } from 'primeng/button';
 import { CalendarModule } from 'primeng/calendar';
 import { DropdownModule } from 'primeng/dropdown';
 import { RadioButtonModule } from 'primeng/radiobutton';
+import { AccordionModule } from 'primeng/accordion';
+import { TableModule } from 'primeng/table';
 import { TabViewModule } from 'primeng/tabview';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -19,14 +21,16 @@ import { FooterComponent } from './footer/footer.component';
 import { EcSearchAndApplyCCComponent } from './Forms-Module/E-Services/Encumbrance-Certificate/ec-search-and-apply-cc/ec-search-and-apply-cc.component';
 import { EcViewECComponent } from './Forms-Module/E-Services/Encumbrance-Certificate/ec-view-ec/ec-view-ec.component';
 import { MarriageRegistrationComponent } from './Forms-Module/Registration/marriage-registration/marriage-registration.component';
+import { EcRequestListComponent } from './Forms-Module/E-Services/Encumbrance-Certificate/ec-request-list/ec-request-list.component';
+import { CircularsComponent } from './circulars/circulars.component';
 import { FirmRegistartionComponent } from './Forms-Module/Registration/firm-registartion/firm-registartion.component';
-import { SocietyRegistrationComponent } from './Registration/society-registration/society-registration.component';
 import { CcRequestListComponent } from './E-Services/certified-copy/cc-request-list/cc-request-list.component';
 import { AdjudicationRequestListComponent } from './Forms-Module/Registration/Adjudication-Registration/adjudication-request-list/adjudication-request-list.component';
 import { CcSearchAndApplyCcComponent } from './E-Services/certified-copy/cc-search-and-apply-cc/cc-search-and-apply-cc.component';
 import { ViewTokenAvailabilityComponent } from './Forms-Module/E-Services/view-token-availability/view-token-availability.component';
 import { PublicUtilityFormsComponent } from './public-utility-forms/public-utility-forms.component';
 
+import { SocietyRegistrationComponent } from './Forms-Module/Registration/society-registration/society-registration.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +42,8 @@ import { PublicUtilityFormsComponent } from './public-utility-forms/public-utili
     EcViewECComponent,
     MarriageRegistrationComponent,
     FooterComponent,
+    EcRequestListComponent,
+    CircularsComponent,
     FirmRegistartionComponent,
     SocietyRegistrationComponent,
     CcRequestListComponent,
@@ -58,6 +64,8 @@ import { PublicUtilityFormsComponent } from './public-utility-forms/public-utili
     CalendarModule,
     DropdownModule,
     RadioButtonModule,
+    AccordionModule,
+    TableModule,
     TabViewModule
   ],
   providers: [],

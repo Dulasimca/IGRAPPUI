@@ -149,11 +149,16 @@
 
                 <div #ec>
                     <div #row5 class="col-12 md:col-12 lg:col-12">
-                        <div class="field col-12 md:col-6 lg:col-6">
+                        <div class="col-12 md:col-6 lg:col-6">
                             <label for="_typeCaptcha">Type the code shown below</label>
                             <input type="text" name="_typeCaptcha" pInputText [(ngModel)]="typeCaptcha" required />
                         </div>
                     </div>
+                </div>
+
+                <div class="col-12 md:col-12 lg:col-12 to-center">
+                    <button pButton type="button" label="Search"></button>&nbsp;
+                    <button pButton type="button" label="Reset"></button>
                 </div>
 
             </form>
