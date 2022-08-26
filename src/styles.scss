@@ -94,7 +94,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     height: 5rem;
 }
 .footer {
-    // position: fixed;
+    position: sticky;
     bottom: 0 !important;
     font-size: 14px;
     height: 45px;
