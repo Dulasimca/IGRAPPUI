@@ -32,6 +32,8 @@ import { ViewTokenAvailabilityComponent } from './Forms-Module/E-Services/view-t
 import { PublicUtilityFormsComponent } from './public-utility-forms/public-utility-forms.component';
 
 import { SocietyRegistrationComponent } from './Forms-Module/Registration/society-registration/society-registration.component';
+import { UserManualComponent } from './user-manual/user-manual.component';
+import { TellMeHowComponent } from './tell-me-how/tell-me-how.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +55,8 @@ import { SocietyRegistrationComponent } from './Forms-Module/Registration/societ
     CcBirthDeathComponent,
     ViewTokenAvailabilityComponent,
     PublicUtilityFormsComponent,
+    UserManualComponent,
+    TellMeHowComponent,
   ],
   imports: [
     BrowserModule,

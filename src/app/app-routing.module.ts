@@ -13,6 +13,8 @@ import { CcSearchAndApplyCcComponent } from './Forms-Module/E-Services/certified
 import { CcRequestListComponent } from './Forms-Module/E-Services/certified-copy/cc-request-list/cc-request-list.component';
 import { ViewTokenAvailabilityComponent } from './Forms-Module/E-Services/view-token-availability/view-token-availability.component';
 import { SocietyRegistrationComponent } from './Forms-Module/Registration/society-registration/society-registration.component';
+import { UserManualComponent } from './user-manual/user-manual.component';
+import { TellMeHowComponent } from './tell-me-how/tell-me-how.component';
 
 
 const routes: Routes = [
@@ -30,6 +32,8 @@ const routes: Routes = [
   { path: 'cc-search-apply', component: CcSearchAndApplyCcComponent },
   { path: 'cc-birth-death', component: CcBirthDeathComponent},
   { path: 'token-availability', component: ViewTokenAvailabilityComponent },
+  { path: 'user-manual', component: UserManualComponent},
+  { path: 'tell-me-how', component: TellMeHowComponent}
 
 ];
 
