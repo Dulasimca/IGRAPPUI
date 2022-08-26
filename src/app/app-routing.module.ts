@@ -9,6 +9,7 @@ import { SocietyRegistrationComponent } from './Registration/society-registratio
 import { AdjudicationRequestListComponent } from './Forms-Module/Registration/Adjudication-Registration/adjudication-request-list/adjudication-request-list.component';
 import { MarriageRegistrationComponent } from './Forms-Module/Registration/marriage-registration/marriage-registration.component';
 import { CcSearchAndApplyCcComponent } from './E-Services/certified-copy/cc-search-and-apply-cc/cc-search-and-apply-cc.component';
+import { ViewTokenAvailabilityComponent } from './Forms-Module/E-Services/view-token-availability/view-token-availability.component';
 
 
 const routes: Routes = [
@@ -21,10 +22,8 @@ const routes: Routes = [
   { path: 'request-list', component: CcRequestListComponent},
   { path: 'marriage-registration', component: MarriageRegistrationComponent },
   { path: 'ad-request-list', component: AdjudicationRequestListComponent },
-  { path: 'cc-search-apply', component: CcSearchAndApplyCcComponent }
-
-   
-
+  { path: 'cc-search-apply', component: CcSearchAndApplyCcComponent },
+  { path: 'token-availability', component: ViewTokenAvailabilityComponent },
 
 ];
 

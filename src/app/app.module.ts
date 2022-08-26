@@ -24,6 +24,8 @@ import { SocietyRegistrationComponent } from './Registration/society-registratio
 import { CcRequestListComponent } from './E-Services/certified-copy/cc-request-list/cc-request-list.component';
 import { AdjudicationRequestListComponent } from './Forms-Module/Registration/Adjudication-Registration/adjudication-request-list/adjudication-request-list.component';
 import { CcSearchAndApplyCcComponent } from './E-Services/certified-copy/cc-search-and-apply-cc/cc-search-and-apply-cc.component';
+import { ViewTokenAvailabilityComponent } from './Forms-Module/E-Services/view-token-availability/view-token-availability.component';
+import { PublicUtilityFormsComponent } from './public-utility-forms/public-utility-forms.component';
 
 
 @NgModule({
@@ -41,6 +43,8 @@ import { CcSearchAndApplyCcComponent } from './E-Services/certified-copy/cc-sear
     CcRequestListComponent,
     AdjudicationRequestListComponent,
     CcSearchAndApplyCcComponent,
+    ViewTokenAvailabilityComponent,
+    PublicUtilityFormsComponent,
   ],
   imports: [
     BrowserModule,
