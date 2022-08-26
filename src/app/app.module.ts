@@ -24,15 +24,17 @@ import { MarriageRegistrationComponent } from './Forms-Module/Registration/marri
 import { EcRequestListComponent } from './Forms-Module/E-Services/Encumbrance-Certificate/ec-request-list/ec-request-list.component';
 import { CircularsComponent } from './circulars/circulars.component';
 import { FirmRegistartionComponent } from './Forms-Module/Registration/firm-registartion/firm-registartion.component';
-import { CcRequestListComponent } from './E-Services/certified-copy/cc-request-list/cc-request-list.component';
 import { AdjudicationRequestListComponent } from './Forms-Module/Registration/Adjudication-Registration/adjudication-request-list/adjudication-request-list.component';
-import { CcSearchAndApplyCcComponent } from './E-Services/certified-copy/cc-search-and-apply-cc/cc-search-and-apply-cc.component';
+import { CcBirthDeathComponent } from './Forms-Module/E-Services/certified-copy/cc-birth-death/cc-birth-death.component';
+import { CcSearchAndApplyCcComponent } from './Forms-Module/E-Services/certified-copy/cc-search-and-apply-cc/cc-search-and-apply-cc.component';
+import { CcRequestListComponent } from './Forms-Module/E-Services/certified-copy/cc-request-list/cc-request-list.component';
 import { ViewTokenAvailabilityComponent } from './Forms-Module/E-Services/view-token-availability/view-token-availability.component';
 import { PublicUtilityFormsComponent } from './public-utility-forms/public-utility-forms.component';
 
 import { SocietyRegistrationComponent } from './Forms-Module/Registration/society-registration/society-registration.component';
 import { KnowYourJurisdictionComponent } from './know-your-jurisdiction/know-your-jurisdiction.component';
 import { CitizenCharterComponent } from './citizen-charter/citizen-charter.component';
+import { DutyAndFeesComponent } from './duty-and-fees/duty-and-fees.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +53,9 @@ import { CitizenCharterComponent } from './citizen-charter/citizen-charter.compo
     CcRequestListComponent,
     AdjudicationRequestListComponent,
     CcSearchAndApplyCcComponent,
+    DutyAndFeesComponent,
+    
+    CcBirthDeathComponent,
     ViewTokenAvailabilityComponent,
     PublicUtilityFormsComponent,
     KnowYourJurisdictionComponent,

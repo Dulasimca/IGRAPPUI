@@ -1,0 +1,101 @@
+<div class="col-12 md:col-12 lg:col-12">
+    <p-panel header="Birth/Death">
+        <form #adRequestForm="ngForm">
+        <div class="col-12 md:col-12 lg:col-12">
+            <p-tabView [(activeIndex)]="activeTabIndex">
+                <p-tabPanel header="Search Document">
+                        <div #row1 class="col-12 md:col-12 lg:col-12">
+                            <div class="p-fluid grid">
+                                <div class="field col-12 md:col-3 lg:col-2">
+                                    <span class="p-float-label">
+                                        <p-dropdown [options]="docOptions" [(ngModel)]="docType" name="_doctype">
+                                        </p-dropdown>
+                                        <label for="_doctype">Document Type</label>
+                                    </span>
+                                </div>
+                                <div class="field col-12 md:col-3 lg:col-2">
+                                    <span class="p-float-label">
+                                        <input type="text" name="_certno" pInputText
+                                            [(ngModel)]="certNumber" required />
+                                        <label for="_certno">Certificate No</label>
+                                    </span>
+                                </div>
+                                <div class="field col-12 md:col-3 lg:col-2">
+                                    <span class="p-float-label">
+                                        <input type="text" name="_regnum" pInputText
+                                            [(ngModel)]="regNum" required />
+                                        <label for="_regnum">Registration No</label>
+                                    </span>
+                                </div>
+                                <div class="field col-12 md:col-3 lg:col-2">
+                                    <span class="p-float-label">
+                                        <input type="text" name="_appname" pInputText
+                                            [(ngModel)]="appName" required />
+                                        <label for="_appname">Applicant Name</label>
+                                    </span>
+                                </div>
+                                <div class="field col-12 md:col-3 lg:col-2">
+                                    <span class="p-float-label">
+                                        <input type="text" name="_fathername" pInputText
+                                            [(ngModel)]="fatherName" required />
+                                        <label for="_fathername">Father's Name</label>
+                                    </span>
+                                </div>
+                                <div class="field col-12 md:col-3 lg:col-2">
+                                    <span class="p-float-label">
+                                        <input type="text" name="_mothername" pInputText
+                                            [(ngModel)]="motherName" required />
+                                        <label for="_mothername">Mother's Name</label>
+                                    </span>
+                                </div>
+                                <div class="field col-12 md:col-3 lg:col-2">
+                                    <span class="p-float-label">
+                                        <p-calendar [(ngModel)]="dob" name="_dob" [showIcon]="true">
+                                        </p-calendar>
+                                        <label for="_dob">Date of birth</label>
+                                    </span>
+                                </div>
+                                <div class="field col-12 md:col-3 lg:col-2">
+                                    <span class="p-float-label">
+                                        <p-dropdown [options]="sronameOptions" [(ngModel)]="sroName" name="_sroname">
+                                        </p-dropdown>
+                                        <label for="_sroname">SRO Name</label>
+                                    </span>
+                                </div>
+                                <div class="field col-12 md:col-3 lg:col-2">
+                                    <span class="p-float-label">
+                                        <p-dropdown [options]="villageOptions" [(ngModel)]="village" name="_village">
+                                        </p-dropdown>
+                                        <label for="_village">Village</label>
+                                    </span>
+                                </div>
+                                <div class="field col-12 md:col-3 lg:col-2">
+                                    <span class="p-float-label">
+                                        <p-dropdown [options]="fromsubyearOptions" [(ngModel)]="fromsubsequentYear" name="_fromsubyear">
+                                        </p-dropdown>
+                                        <label for="_fromsubyear">From Subsequent Years to..</label>
+                                    </span>
+                                </div>
+                                <div class="field col-12 md:col-3 lg:col-2">
+                                    <span class="p-float-label">
+                                        <p-dropdown [options]="tosubyearOptions" [(ngModel)]="tosubsequentYear" name="_tosubyear">
+                                        </p-dropdown>
+                                        <label for="_tosubyear">To Subsequent Years to be..</label>
+                                    </span>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="col-12 md:col-12 lg:col-12 to-center">
+                            <button pButton type="button" label="Search"></button>&nbsp;
+                            <button pButton type="button" label="Reset"></button>
+                        </div>
+                </p-tabPanel>
+                <p-tabPanel header="Personal Details">
+                </p-tabPanel>
+                <p-tabPanel header="Payment">
+                </p-tabPanel>
+            </p-tabView>
+        </div>
+    </form>
+    </p-panel>
+</div>
