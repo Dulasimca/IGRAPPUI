@@ -8,6 +8,9 @@ import { ButtonModule } from 'primeng/button';
 import { CalendarModule } from 'primeng/calendar';
 import { DropdownModule } from 'primeng/dropdown';
 import { RadioButtonModule } from 'primeng/radiobutton';
+import { AccordionModule } from 'primeng/accordion';
+import { TableModule } from 'primeng/table';
+import { TabViewModule } from 'primeng/tabview';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,11 +21,22 @@ import { FooterComponent } from './footer/footer.component';
 import { EcSearchAndApplyCCComponent } from './Forms-Module/E-Services/Encumbrance-Certificate/ec-search-and-apply-cc/ec-search-and-apply-cc.component';
 import { EcViewECComponent } from './Forms-Module/E-Services/Encumbrance-Certificate/ec-view-ec/ec-view-ec.component';
 import { MarriageRegistrationComponent } from './Forms-Module/Registration/marriage-registration/marriage-registration.component';
+import { EcRequestListComponent } from './Forms-Module/E-Services/Encumbrance-Certificate/ec-request-list/ec-request-list.component';
+import { CircularsComponent } from './circulars/circulars.component';
 import { FirmRegistartionComponent } from './Forms-Module/Registration/firm-registartion/firm-registartion.component';
-import { SocietyRegistrationComponent } from './Registration/society-registration/society-registration.component';
-import { CcRequestListComponent } from './E-Services/certified-copy/cc-request-list/cc-request-list.component';
 import { AdjudicationRequestListComponent } from './Forms-Module/Registration/Adjudication-Registration/adjudication-request-list/adjudication-request-list.component';
-
+import { CcBirthDeathComponent } from './Forms-Module/E-Services/certified-copy/cc-birth-death/cc-birth-death.component';
+import { CcSearchAndApplyCcComponent } from './Forms-Module/E-Services/certified-copy/cc-search-and-apply-cc/cc-search-and-apply-cc.component';
+import { CcRequestListComponent } from './Forms-Module/E-Services/certified-copy/cc-request-list/cc-request-list.component';
+import { ViewTokenAvailabilityComponent } from './Forms-Module/E-Services/view-token-availability/view-token-availability.component';
+import { PublicUtilityFormsComponent } from './public-utility-forms/public-utility-forms.component';
+import { SocietyRegistrationComponent } from './Forms-Module/Registration/society-registration/society-registration.component';
+import { GuidelineValueComponent } from './guideline-value/guideline-value.component';
+import { UserManualComponent } from './user-manual/user-manual.component';
+import { TellMeHowComponent } from './tell-me-how/tell-me-how.component';
+import { KnowYourJurisdictionComponent } from './know-your-jurisdiction/know-your-jurisdiction.component';
+import { CitizenCharterComponent } from './citizen-charter/citizen-charter.component';
+import { DutyAndFeesComponent } from './duty-and-fees/duty-and-fees.component';
 
 @NgModule({
   declarations: [
@@ -34,10 +48,22 @@ import { AdjudicationRequestListComponent } from './Forms-Module/Registration/Ad
     EcViewECComponent,
     MarriageRegistrationComponent,
     FooterComponent,
+    EcRequestListComponent,
+    CircularsComponent,
     FirmRegistartionComponent,
     SocietyRegistrationComponent,
     CcRequestListComponent,
     AdjudicationRequestListComponent,
+    CcSearchAndApplyCcComponent,
+    DutyAndFeesComponent,    
+    CcBirthDeathComponent,
+    ViewTokenAvailabilityComponent,
+    PublicUtilityFormsComponent,
+    GuidelineValueComponent,
+    UserManualComponent,
+    TellMeHowComponent,
+    KnowYourJurisdictionComponent,
+    CitizenCharterComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,7 +76,10 @@ import { AdjudicationRequestListComponent } from './Forms-Module/Registration/Ad
     ButtonModule,
     CalendarModule,
     DropdownModule,
-    RadioButtonModule
+    RadioButtonModule,
+    AccordionModule,
+    TableModule,
+    TabViewModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,24 +1,36 @@
 <div class="col-12 md:col-12 lg:col-12">
-    <p-card>
-        <div class="grid">
-            <div class="md:col-1 lg:col-2"></div>
-            <div class="col-12 md:col-10 lg:col-8 no-pad-lt no-pad-rt">
-                <div class="grid to-center">
-                    <div class="col-4 md:col-4 lg:col-4 dsh-icon-div dsh-grid-bg1" [routerLink]="['/marriage-registration']">
+    <div class="col-12 md:col-12 lg:col-12 card">
+        <div #box1 class="col-12 md:col-12 lg:col-12 card">
+            <div class="bdr-box-light-blue">
+                <div class="col-12 md:col-12 lg:col-12 dsh-grid1-bg">Registration</div>
+                <div class="grid" style="margin-top: 5px;">
+                    <div class="col-4 md:col-4 lg:col-4 dsh-icon-div dsh-grid-bg1"
+                        [routerLink]="['/marriage-registration']">
                         <img src="assets/images/wedding-couple.png" /><br />
                         <span class="dsh-icons-title">
                             <span>Marriage</span><br />
                             <span> Registration</span>
                         </span>
                     </div>
-                    <div class="col-4 md:col-4 lg:col-4 dsh-icon-div dsh-grid-bg2" [routerLink]="['/societ-registration']">
+                    <div class="col-4 md:col-4 lg:col-4 dsh-icon-div dsh-grid-bg2"
+                        [routerLink]="['/societ-registration']">
                         <img src="assets/images/society.png" /><br />
                         <span class="dsh-icons-title">
                             <span>Society</span><br />
                             <span> Registration</span>
                         </span>
                     </div>
-                    <div class="col-4 md:col-4 lg:col-4 dsh-icon-div dsh-grid-bg3">
+                </div>
+                <div class="grid" style="margin-top: 5px;">
+                    <div class="col-4 md:col-4 lg:col-4 dsh-icon-div dsh-grid-bg3"
+                        [routerLink]="['/firm-registration']">
+                        <img src="assets/images/corporation.png" /><br />
+                        <span class="dsh-icons-title">
+                            <span>Firm</span><br />
+                            <span> Registration</span>
+                        </span>
+                    </div>
+                    <div class="col-4 md:col-4 lg:col-4 dsh-icon-div dsh-grid-bg4" [routerLink]="['/ad-request-list']">
                         <img src="assets/images/judgement.png" /><br />
                         <span class="dsh-icons-title">
                             <span>Adjudication</span><br />
@@ -28,38 +40,26 @@
                 </div>
             </div>
         </div>
-        <div class="grid">
-            <div class="md:col-1 lg:col-2"></div>
-            <div class="col-12 md:col-10 lg:col-8 no-pad-lt no-pad-rt">
-                <div class="grid to-center">
-                    <div class="col-4 md:col-4 lg:col-4 dsh-icon-div dsh-grid-bg4" [routerLink]="['/firm-registration']">
-                        <img src="assets/images/corporation.png" /><br />
-                        <span class="dsh-icons-title">
-                            <span>Firm</span><br />
-                            <span> Registration</span>
-                        </span>
-                    </div>
-                    <div class="col-4 md:col-4 lg:col-4 dsh-icon-div dsh-grid-bg5">
-                        <img src="assets/images/tokens.png" /><br />
-                        <span class="dsh-icons-title">
-                            <span>Token</span><br />
-                            <span> Availability</span>
-                        </span>
-                    </div>
-                    <div class="col-4 md:col-4 lg:col-4 dsh-icon-div dsh-grid-bg6" [routerLink]="['/encumbrance-viewEC']">
+        <div #box2 class="col-12 md:col-12 lg:col-12 card">
+            <div class="bdr-box-light-blue">
+                <div class="col-12 md:col-12 lg:col-12 dsh-grid1-bg">E-Services</div>
+                <div class="grid" style="margin-top: 5px;">
+                    <div class="col-4 md:col-4 lg:col-4 dsh-icon-div dsh-grid-bg5" [routerLink]="['/encumbrance-viewEC']">
                         <img src="assets/images/award.png" /><br />
                         <span class="dsh-icons-title">
                             <span>Encumbrance</span><br />
                             <span> Certificate</span>
                         </span>
                     </div>
+                    <div class="col-4 md:col-4 lg:col-4 dsh-icon-div dsh-grid-bg6">
+                        <img src="assets/images/medical-certificate.png" /><br />
+                        <span class="dsh-icons-title">
+                            <span>Birth & Death</span><br />
+                            <span> Certificate</span>
+                        </span>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="grid">
-            <div class="md:col-1 lg:col-2"></div>
-            <div class="col-12 md:col-10 lg:col-8 no-pad-lt no-pad-rt">
-                <div class="grid to-center">
+                <div class="grid" style="margin-top: 5px;">
                     <div class="col-4 md:col-4 lg:col-4 dsh-icon-div dsh-grid-bg7" [routerLink]="['/request-list']">
                         <img src="assets/images/certified.png" /><br />
                         <span class="dsh-icons-title">
@@ -68,13 +68,27 @@
                         </span>
                     </div>
                     <div class="col-4 md:col-4 lg:col-4 dsh-icon-div dsh-grid-bg8">
+                        <img src="assets/images/tokens.png" /><br />
+                        <span class="dsh-icons-title">
+                            <span>Token</span><br />
+                            <span> Availability</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div #box3 class="col-12 md:col-12 lg:col-12 card">
+            <div class="bdr-box-light-blue">
+                <div class="col-12 md:col-12 lg:col-12 dsh-grid1-bg">Others</div>
+                <div class="grid" style="margin-top: 5px;">
+                    <div class="col-4 md:col-4 lg:col-4 dsh-icon-div dsh-grid-bg9" [routerLink]="['/circular']">
                         <img src="assets/images/circular.png" /><br />
                         <span class="dsh-icons-title">
                             <span>Circulars</span><br />
                             <span>&nbsp; </span>
                         </span>
                     </div>
-                    <div class="col-4 md:col-4 lg:col-4 dsh-icon-div dsh-grid-bg9">
+                    <div class="col-4 md:col-4 lg:col-4 dsh-icon-div dsh-grid-bg10" [routerLink]="['/guideline-value']">
                         <img src="assets/images/guidelines.png" /><br />
                         <span class="dsh-icons-title">
                             <span>Guideline</span><br />
@@ -84,5 +98,5 @@
                 </div>
             </div>
         </div>
-    </p-card>
+    </div>
 </div>
