@@ -28,6 +28,9 @@ export class EcSearchAndApplyCCComponent implements OnInit {
   west: any;
   north: any;
   south: any;
+  otherInfo: any;
+  otherRegDoc: any;
+  typeCaptcha: string = '';
 
   constructor() { }
 

@@ -152,6 +152,33 @@
                         </div>
                     </div>
                 </div>
+                <div #row5 class="bdr-box-light-blue" style="margin-top:10px">
+                    <div class="col-12 md:col-12 lg:col-12">
+                    <div class="p-fluid grid to-center" style="margin-top: .5rem;">
+                        <div class="field col-12 md:col-3 lg:col-2">
+                            <span class="p-float-label">
+                                <input type="text" name="_otherInfo" pInputText [(ngModel)]="otherInfo" required />
+                                <label for="_otherInfo">Any other relevant information</label>
+                            </span>
+                        </div>
+                        <div class="col-12 md:col-3 lg:col-2">
+                            <span class="p-float-label">
+                                <input type="text" name="_otherRegDoc" pInputText [(ngModel)]="otherRegDoc" required />
+                                <label for="_otherRegDoc">Any Registered Document</label>
+                            </span>
+                        </div>
+                        <div class="col-12 md:col-6 lg:col-6">
+                            <label for="_typeCaptcha">Type the code shown below</label>
+                            <input type="text" name="_typeCaptcha" pInputText [(ngModel)]="typeCaptcha" required />
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div #row6 class="col-12 md:col-12 lg:col-12 to-center">
+                    <button pButton type="button" label="Search"></button>&nbsp;
+                    <button pButton type="button" label="Reset"></button>
+                </div>
+
             </form>
         </div>
     </p-panel>
