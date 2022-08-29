@@ -11,6 +11,8 @@ import { RadioButtonModule } from 'primeng/radiobutton';
 import { AccordionModule } from 'primeng/accordion';
 import { TableModule } from 'primeng/table';
 import { TabViewModule } from 'primeng/tabview';
+import { SidebarModule } from 'primeng/sidebar';
+import { MenuModule } from 'primeng/menu';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -79,7 +81,9 @@ import { DutyAndFeesComponent } from './duty-and-fees/duty-and-fees.component';
     RadioButtonModule,
     AccordionModule,
     TableModule,
-    TabViewModule
+    TabViewModule,
+    SidebarModule,
+    MenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

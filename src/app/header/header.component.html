@@ -1,9 +1,14 @@
 <div class="col-12 md:col-12 lg:col-12 hdr-div">
     <div class="grid">
+        <div class="col-1 md:col-1 lg:col-1" style="margin: auto;" (click)="toggleMenu()">
+            <span>
+                <i class="pi pi-bars" style="font-size: 1.5rem;"></i>
+            </span>
+        </div>
         <div class="col-2 md:col-2 lg:col-2" [routerLink]="['/dashboard']">
             <img src="assets/images/TN_Govt_Logo.png">
         </div>
-        <div class="col-8 md:col-8 lg:col-8" style="margin-top: 2%; font-weight: 500;text-shadow: 2px 2px #183e02;">
+        <div class="col-7 md:col-7 lg:col-7" style="margin-top: 2%; font-weight: 500;text-shadow: 2px 2px #183e02;">
             <span>IGRS (TNREGINET)</span><br/>
             <span>Registration Department</span>
         </div>
@@ -12,3 +17,6 @@
         </div>
     </div>
 </div>
+<p-sidebar [(visible)]="display">
+    <p-menu [model]="items"></p-menu>
+</p-sidebar>

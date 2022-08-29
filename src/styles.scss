@@ -220,3 +220,28 @@ label {
     border-color: #2083d4 !important;
     background: #125386 !important;
 }
+.p-sidebar .p-sidebar-header {
+    padding: 0.2rem !important;
+}
+.p-menu {
+    width: 18rem !important;
+    background: #042138 !important;
+    border: 1px solid #008494 !important;
+    padding: .05rem 0 !important;
+}
+.p-menu .p-menuitem-link .p-menuitem-icon {
+    color: white !important;
+}
+.p-menu .p-menuitem-link .p-menuitem-text {
+    color: white !important;
+}
+.p-sidebar-left {
+    background: #042138 !important;
+}
+.p-menu .p-submenu-header {
+    background: #0d3c61 !important;
+    color: white !important;
+}
+.p-sidebar .p-sidebar-header .p-sidebar-close, .p-sidebar .p-sidebar-header .p-sidebar-icon {
+    color: white !important;
+}
