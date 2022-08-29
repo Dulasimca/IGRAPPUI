@@ -19,6 +19,16 @@ export class EcSearchAndApplyCCComponent implements OnInit {
   village: any;
   surveyNo: any;
   subDivisionNo: any;
+  plotNo: any;
+  flatNo: any;
+  doorNo: any;
+  wardNo: any;
+  blockNo: any;
+  east: any;
+  west: any;
+  north: any;
+  south: any;
+
   constructor() { }
 
   ngOnInit(): void {

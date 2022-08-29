@@ -30,41 +30,125 @@
                             <span class="p-float-label">
                                 <p-calendar [(ngModel)]="ecStartDate" name="_ecStartDate" [showIcon]="true">
                                 </p-calendar>
-                                <label for="_ecStartDate">D.O.B</label>
+                                <label for="_ecStartDate">EC Start Date</label>
                             </span>
                         </div>
                         <div class="col-12 md:col-3 lg:col-2">
                             <span class="p-float-label">
                                 <p-calendar [(ngModel)]="ecEndDate" name="_ecEndDate" [showIcon]="true">
                                 </p-calendar>
-                                <label for="_ecEndDate">D.O.B</label>
+                                <label for="_ecEndDate">EC End Date</label>
                             </span>
                         </div>
                     </div>
                 </div>
-                <div #row2 class="col-12 md:col-12 lg:col-12">
-                    <div class="field" style="padding-bottom: .5rem;"> Survey Details: </div>
-                    <div class="p-fluid grid">
-                        <div class="field col-12 md:col-3 lg:col-2">
-                            <span class="p-float-label">
-                                <p-dropdown [options]="villageOptions" [(ngModel)]="village" name="_village">
-                                </p-dropdown>
-                                <label for="_village">Village</label>
-                            </span>
+                <div #row2 class="bdr-box-light-blue">
+                    <div class="field dsh-grid1-bg" style="padding: 5px;"> Survey Details: </div>
+                    <div #surveyRow1 class="col-12 md:col-12 lg:col-12">
+                        <div class="p-fluid grid">
+                            <div class="field col-12 md:col-3 lg:col-2">
+                                <span class="p-float-label">
+                                    <p-dropdown [options]="villageOptions" [(ngModel)]="village" name="_village">
+                                    </p-dropdown>
+                                    <label for="_village">Village</label>
+                                </span>
+                            </div>
+                            <div class="field col-12 md:col-3 lg:col-2">
+                                <span class="p-float-label">
+                                    <input type="text" name="_surveyNo" pInputText [(ngModel)]="surveyNo" required />
+                                    <label for="_surveyNo">Survey No</label>
+                                </span>
+                            </div>
+                            <div class="field col-12 md:col-3 lg:col-2">
+                                <span class="p-float-label">
+                                    <input type="text" name="_subDivisionNo" pInputText [(ngModel)]="subDivisionNo"
+                                        required />
+                                    <label for="_subDivisionNo">Sub Division No</label>
+                                </span>
+                            </div>
+                            <div class="field col-12 md:col-3 lg:col-2">
+                                <span class="p-float-label">
+                                    <input type="text" name="_plotNo" pInputText [(ngModel)]="plotNo" required />
+                                    <label for="_plotNo">Plot No</label>
+                                </span>
+                            </div>
+                            <div class="field col-12 md:col-3 lg:col-2">
+                                <span class="p-float-label">
+                                    <input type="text" name="_flatNo" pInputText [(ngModel)]="flatNo" required />
+                                    <label for="_flatNo">Flat No</label>
+                                </span>
+                            </div>
+                            <div class="col-12 md:col-12 lg:col-12 no-padding to-center">
+                                <div class="grid">
+                                    <button pButton type="button" label="Add"></button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="field col-12 md:col-3 lg:col-2">
-                            <span class="p-float-label">
-                                <input type="text" name="_surveyNo" pInputText
-                                    [(ngModel)]="surveyNo" required />
-                                <label for="_surveyNo">Survey No</label>
-                            </span>
+                    </div>
+                </div>
+                <div #row3 class="bdr-box-light-blue" style="margin-top:10px">
+                    <div class="field dsh-grid1-bg" style="padding: 5px;"> House Details: </div>
+                    <div class="col-12 md:col-12 lg:12">
+                        <div class="p-fluid grid">
+                            <div class="field col-12 md:col-3 lg:col-2">
+                                <span class="p-float-label">
+                                    <input type="text" name="_doorNo" pInputText [(ngModel)]="doorNo" required />
+                                    <label for="_doorNo">Door No</label>
+                                </span>
+                            </div>
+                            <div class="field col-12 md:col-3 lg:col-2">
+                                <span class="p-float-label">
+                                    <input type="text" name="_wardNo" pInputText [(ngModel)]="wardNo" required />
+                                    <label for="_wardNo">Ward No</label>
+                                </span>
+                            </div>
+                            <div class="field col-12 md:col-3 lg:col-2">
+                                <span class="p-float-label">
+                                    <input type="text" name="_blockNo" pInputText [(ngModel)]="blockNo" required />
+                                    <label for="_blockNo">Block No</label>
+                                </span>
+                            </div>
+                            <div class="col-12 md:col-12 lg:col-12 to-center">
+                                <div class="grid">
+                                    <button pButton type="button" label="Add"></button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="field col-12 md:col-3 lg:col-2">
-                            <span class="p-float-label">
-                                <input type="text" name="_subDivisionNo" pInputText
-                                    [(ngModel)]="subDivisionNo" required />
-                                <label for="_subDivisionNo">Sub Division No</label>
-                            </span>
+                    </div>
+                </div>
+                <div #row4 class="bdr-box-light-blue" style="margin-top:10px">
+                    <div class="field dsh-grid1-bg" style="padding: 5px;"> Boundary Details: </div>
+                    <div class="col-12 md:col-12 lg:12">
+                        <div class="p-fluid grid to-center">
+                            <div class="field col-6 md:col-3 lg:col-2">
+                                <span class="p-float-label">
+                                    <input type="text" name="_east" pInputText [(ngModel)]="east" required />
+                                    <label for="_east">East</label>
+                                </span>
+                            </div>
+                            <div class="field col-6 md:col-3 lg:col-2">
+                                <span class="p-float-label">
+                                    <input type="text" name="_west" pInputText [(ngModel)]="west" required />
+                                    <label for="_west">West</label>
+                                </span>
+                            </div>
+                            <div class="field col-6 md:col-3 lg:col-2">
+                                <span class="p-float-label">
+                                    <input type="text" name="_north" pInputText [(ngModel)]="north" required />
+                                    <label for="_north">North</label>
+                                </span>
+                            </div>
+                            <div class="field col-6 md:col-3 lg:col-2">
+                                <span class="p-float-label">
+                                    <input type="text" name="_south" pInputText [(ngModel)]="south" required />
+                                    <label for="_south">South</label>
+                                </span>
+                            </div>
+                            <div class="col-12 md:col-12 lg:col-12 to-center">
+                                <div class="grid">
+                                    <button pButton type="button" label="Add"></button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
