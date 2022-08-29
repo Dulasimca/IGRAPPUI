@@ -5,9 +5,12 @@
     <author email="dulasi@trymetech.com" href="https://trymetech.com">
         Trymetech Development Team
     </author>
+    <icon density="mdpi" height="57" platform="android" src="src\assets\images\TN_Govt_Logo.png" width="57" />
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
+    <allow-intent href="market:*" />
     <preference name="loglevel" value="DEBUG" />
+    <preference name="loadUrlTimeoutValue" value="700000" />
 </widget>
