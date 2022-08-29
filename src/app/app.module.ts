@@ -13,6 +13,7 @@ import { TableModule } from 'primeng/table';
 import { TabViewModule } from 'primeng/tabview';
 import { SidebarModule } from 'primeng/sidebar';
 import { MenuModule } from 'primeng/menu';
+import { CheckboxModule } from 'primeng/checkbox';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -39,6 +40,7 @@ import { TellMeHowComponent } from './tell-me-how/tell-me-how.component';
 import { KnowYourJurisdictionComponent } from './know-your-jurisdiction/know-your-jurisdiction.component';
 import { CitizenCharterComponent } from './citizen-charter/citizen-charter.component';
 import { DutyAndFeesComponent } from './duty-and-fees/duty-and-fees.component';
+import { PWDCalculatorComponent } from './Forms-Module/Others/pwd-calculator/pwd-calculator.component';
 
 @NgModule({
   declarations: [
@@ -66,6 +68,7 @@ import { DutyAndFeesComponent } from './duty-and-fees/duty-and-fees.component';
     TellMeHowComponent,
     KnowYourJurisdictionComponent,
     CitizenCharterComponent,
+    PWDCalculatorComponent,
   ],
   imports: [
     BrowserModule,
@@ -83,7 +86,8 @@ import { DutyAndFeesComponent } from './duty-and-fees/duty-and-fees.component';
     TableModule,
     TabViewModule,
     SidebarModule,
-    MenuModule
+    MenuModule,
+    CheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -23,4 +23,12 @@ export class TableConstants {
         { field: 'Stamp Duty', header: 'Stamp Duty', align: 'left !important'},
         { field: 'Registration Fee', header: 'Registration Fee', align: 'left !important'},
     ];
+
+    public static readonly PWDColums = [
+        { field: 'floorNo', header: 'Floor No.', align: 'left !important'},
+        { field: 'areaSqFt', header: 'Area Sq.Ft', align: 'right !important'},
+        { field: 'material', header: 'Material Type', align: 'left !important'},
+        { field: 'wood', header: 'Wood Type', align: 'left !important'},
+        { field: 'roof', header: 'Roof Type', align: 'left !important'},
+    ];
 }

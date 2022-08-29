@@ -1,0 +1,224 @@
+<div class="col-12 md:col-12 lg:col-12">
+    <p-panel header="PWD Calculator">
+        <div class="col-12 md:col-12 lg:col-12">
+            <form #ecSearchForm="ngForm">
+                <div #row1 class="col-12 md:col-12 lg:col-12">
+                    <div class="p-fluid grid">
+                        <div class="field col-12 md:col-3 lg:col-2">
+                            <span class="p-float-label">
+                                <p-dropdown [options]="buildingTypeOptions" [(ngModel)]="buildingType"
+                                    name="_buildingType">
+                                </p-dropdown>
+                                <label for="_buildingType">Building Type</label>
+                            </span>
+                        </div>
+                        <div class="field col-12 md:col-3 lg:col-2">
+                            <span class="p-float-label">
+                                <p-dropdown [options]="regionOptions" [(ngModel)]="region" name="_region">
+                                </p-dropdown>
+                                <label for="_region">Region</label>
+                            </span>
+                        </div>
+                        <div class="field col-12 md:col-3 lg:col-2">
+                            <span class="p-float-label">
+                                <p-dropdown [options]="calculationPeriodOptions" [(ngModel)]="calculationPeriod"
+                                    name="_calculationPeriod">
+                                </p-dropdown>
+                                <label for="_calculationPeriod">Calculation Period</label>
+                            </span>
+                        </div>
+                        <div class="field col-12 md:col-3 lg:col-2">
+                            <span class="p-float-label">
+                                <p-dropdown [options]="insertionUnitOptions" [(ngModel)]="insertionUnit"
+                                    name="_insertionUnit">
+                                </p-dropdown>
+                                <label for="_insertionUnit">Insertion Unit</label>
+                            </span>
+                        </div>
+                        <div class="field col-12 md:col-3 lg:col-2">
+                            <span class="p-float-label">
+                                <input type="text" name="_buildingAge" pInputText [(ngModel)]="buildingAge" required />
+                                <label for="_buildingAge">Age Of Building(Years)</label>
+                            </span>
+                        </div>
+                        <div class="col-12 md:col-12 lg:col-12">
+                            <p-table styleClass="p-datatable-gridlines" responsiveLayout="scroll">
+                                <ng-template pTemplate="header" let-columns>
+                                    <tr>
+                                        <th>S.No.</th>
+                                        <th>Floor No</th>
+                                        <th>Area Sq Ft.</th>
+                                        <th>Material Type</th>
+                                        <th>Wood Type</th>
+                                        <th>Roof Type</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </ng-template>
+                                <ng-template pTemplate="body" let-rowData let-rowIndex="rowIndex" let-columns="columns">
+                                    <tr>
+                                        <td>
+                                            {{rowIndex+1}}
+                                        </td>
+                                        <td>
+                                            <p-dropdown [options]="floorNoOptions" [(ngModel)]="floorNo"
+                                                name="_floorNo">
+                                            </p-dropdown>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="_areaSqFt" pInputText [(ngModel)]="areaSqFt"
+                                                required />
+                                        </td>
+                                        <td>
+                                            <p-dropdown [options]="materialOptions" [(ngModel)]="material"
+                                                name="_material">
+                                            </p-dropdown>
+                                        </td>
+                                        <td>
+                                            <p-dropdown [options]="woodOptions" [(ngModel)]="wood" name="_wood">
+                                            </p-dropdown>
+                                        </td>
+                                        <td>
+                                            <p-dropdown [options]="roofOptions" [(ngModel)]="roof" name="_roof">
+                                            </p-dropdown>
+                                        </td>
+                                    </tr>
+                                </ng-template>
+                            </p-table>
+                            <div class="col-12 md:col-12 lg:col-12 no-padding to-center">
+                                <div class="grid">
+                                    <button pButton type="button" label="Add"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div #row2 class="bdr-box-light-blue" style="margin-top:10px">
+                    <div class="field dsh-grid1-bg" style="padding: 5px;">
+                        <p-checkbox name="_floortype" [binary]="true" [(ngModel)]="isFloorSelected"></p-checkbox>
+                        &nbsp;&nbsp;
+                        <span>Floor Type</span>
+                    </div>
+                    <div *ngIf="isFloorSelected" class="col-12 md:col-12 lg:12">
+                        <div class="p-fluid grid">
+                            <div class="field col-12 md:col-3 lg:col-2">
+                                <span>isRenewed?</span>
+                                <p-radioButton name="_floorRenewed" value="0" label="No" [(ngModel)]="isFloorRenewed">
+                                </p-radioButton>&nbsp;
+                                <p-radioButton name="_floorRenewed" value="1" label="Yes" [(ngModel)]="isFloorRenewed">
+                                </p-radioButton>
+                            </div>
+                            <div class="field col-12 md:col-3 lg:col-2">
+                                <span class="p-float-label">
+                                    <input type="text" name="_floorAge" pInputText [(ngModel)]="floorAge" required />
+                                    <label for="_floorAge">Age Of Flooring(Minimum 1 year)</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div #row3 class="bdr-box-light-blue" style="margin-top:10px">
+                    <div class="field dsh-grid1-bg" style="padding: 5px;">
+                        <span>Building Amenities</span>
+                    </div>
+                    <div class="col-12 md:col-12 lg:12">
+                        <div class="p-fluid grid">
+                            <div *ngFor="let i of amenities" class="col-12 md:col-3 lg:col-2">
+                                <p-checkbox name="i.name" [binary]="true" [(ngModel)]="i.value" label={{i.label}}
+                                    (onChange)="onCheck()"></p-checkbox>&nbsp;&nbsp;
+                            </div>
+                        </div>
+                        <div>Other Extra Amenities</div>
+                        <div *ngFor="let i of extraAmenities" class="col-12 md:col-3 lg:col-2">
+                            <p-checkbox name="i.name" [binary]="true" [(ngModel)]="i.value" label={{i.label}}
+                                (onChange)="onCheck()"></p-checkbox>&nbsp;&nbsp;
+                        </div>
+                    </div>
+                </div>
+                <div #row4 class="bdr-box-light-blue" style="margin-top:10px">
+                    <div class="field dsh-grid1-bg" style="padding: 5px;">
+                        <p-checkbox name="_compoundwall" [binary]="true" [(ngModel)]="isCompoundSelected"></p-checkbox>
+                        &nbsp;&nbsp;
+                        <span>Compound Wall</span>
+                    </div>
+                    <div *ngIf="isCompoundSelected" class="col-12 md:col-12 lg:12">
+                        <div class="p-fluid grid">
+                            <div class="field col-12 md:col-3 lg:col-2">
+                                <span class="p-float-label">
+                                    <p-dropdown [options]="compoundWallTypeOptions" [(ngModel)]="compoundWallType"
+                                        name="_compoundWallType">
+                                    </p-dropdown>
+                                    <label for="_compoundWallType">Compound Wall Type</label>
+                                </span>
+                            </div>
+                            <div class="field col-12 md:col-3 lg:col-2">
+                                <span class="p-float-label">
+                                    <input type="text" name="_lengthOfWall" pInputText [(ngModel)]="lengthOfWall"
+                                        required />
+                                    <label for="_lengthOfWall">Length Of Compound Wall</label>
+                                </span>
+                            </div>
+                            <div class="field col-12 md:col-3 lg:col-2">
+                                <span>isRenewed?</span>
+                                <p-radioButton name="_compoundRenewed" value="0" label="No"
+                                    [(ngModel)]="isCompoundRenewed">
+                                </p-radioButton>&nbsp;
+                                <p-radioButton name="_compoundRenewed" value="1" label="Yes"
+                                    [(ngModel)]="isCompoundRenewed">
+                                </p-radioButton>
+                            </div>
+                            <div class="field col-12 md:col-3 lg:col-2">
+                                <span class="p-float-label">
+                                    <input type="text" name="_compoundAge" pInputText [(ngModel)]="ageOfCompoundWall"
+                                        required />
+                                    <label for="_compoundAge">Age Of Compound Wall</label>
+                                </span>
+                            </div>
+                            <div class="field col-12 md:col-3 lg:col-2">
+                                <label for="_share">Share</label>
+                                <div class="grid">
+                                    <div class="col-5">
+                                        <input type="text" name="_share1" pInputText [(ngModel)]="share1" required />
+                                    </div>
+                                    <div class="col-1">/</div>
+                                    <div class="col-5">
+                                        <input type="text" name="_share2" pInputText [(ngModel)]="share2" required />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div #row5 class="bdr-box-light-blue" style="margin-top:10px">
+                    <div class="field dsh-grid1-bg" style="padding: 5px;">
+                        <p-checkbox name="_garage" [binary]="true" [(ngModel)]="isGarageSelected"></p-checkbox>
+                        &nbsp;&nbsp;
+                        <span>Garage</span>
+                    </div>
+                    <div *ngIf="isGarageSelected" class="col-12 md:col-12 lg:12">
+                        <div class="p-fluid grid">
+                            <div class="field col-12 md:col-3 lg:col-2">
+                                <span class="p-float-label">
+                                    <input type="text" name="_garageAreaSqFt" pInputText [(ngModel)]="garageAreaSqFt"
+                                        required />
+                                    <label for="_garageAreaSqFt">Area Sq.Ft</label>
+                                </span>
+                            </div>
+                            <div class="field col-12 md:col-3 lg:col-2">
+                                <span class="p-float-label">
+                                    <input type="text" name="_garageAge" pInputText [(ngModel)]="garageAge"
+                                        required />
+                                    <label for="_garageAge">Age Of Garage</label>
+                                </span>
+                            </div>
+                            <div *ngFor="let i of garageItems" class="field col-12 md:col-3 lg:col-2">
+                                <p-radioButton name="i.name" value={{i.value}} label={{i.label}}
+                                [(ngModel)]="selectedGarage" (onClick)="onSelectGarage(i.value)">
+                            </p-radioButton>&nbsp;
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </p-panel>
+</div>

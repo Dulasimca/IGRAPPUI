@@ -20,6 +20,7 @@ import { PublicUtilityFormsComponent } from './public-utility-forms/public-utili
 import { KnowYourJurisdictionComponent } from './know-your-jurisdiction/know-your-jurisdiction.component';
 import { CitizenCharterComponent } from './citizen-charter/citizen-charter.component';
 import { DutyAndFeesComponent } from './duty-and-fees/duty-and-fees.component';
+import { PWDCalculatorComponent } from './Forms-Module/Others/pwd-calculator/pwd-calculator.component';
 
 
 const routes: Routes = [
@@ -46,6 +47,7 @@ const routes: Routes = [
   { path: 'public-utility', component: PublicUtilityFormsComponent },
   { path: 'jurdication', component: KnowYourJurisdictionComponent },
   { path: 'citizen-charter', component: CitizenCharterComponent },
+  { path: 'pwd-calculator', component: PWDCalculatorComponent },
 ];
 
 @NgModule({
