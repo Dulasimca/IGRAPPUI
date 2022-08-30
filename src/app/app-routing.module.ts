@@ -21,25 +21,25 @@ import { KnowYourJurisdictionComponent } from './know-your-jurisdiction/know-you
 import { CitizenCharterComponent } from './citizen-charter/citizen-charter.component';
 import { DutyAndFeesComponent } from './duty-and-fees/duty-and-fees.component';
 import { PWDCalculatorComponent } from './Forms-Module/Others/pwd-calculator/pwd-calculator.component';
+import { LoginComponent } from './login/login.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'encumbrance-search', component: EcSearchAndApplyCCComponent },
   { path: 'encumbrance-viewEC', component: EcViewECComponent },
   { path: 'encumbrance-request-list', component: EcRequestListComponent },
   { path: 'circular', component: CircularsComponent },
   { path: 'firm-registration', component: FirmRegistartionComponent},
-  { path: 'societ-registration', component: SocietyRegistrationComponent},
-  { path: 'request-list', component: CcRequestListComponent},
+  { path: 'society-registration', component: SocietyRegistrationComponent},
+  { path: 'cc-request-list', component: CcRequestListComponent},
   { path: 'marriage-registration', component: MarriageRegistrationComponent },
-  { path: 'ad-request-list', component: AdjudicationRequestListComponent },
-  { path: 'cc-search-apply', component: CcSearchAndApplyCcComponent },
+  { path: 'adjudication-request-list', component: AdjudicationRequestListComponent },
   { path: 'duty-and-fees', component: DutyAndFeesComponent },
   { path: 'cc-birth-death', component: CcBirthDeathComponent},
   { path: 'token-availability', component: ViewTokenAvailabilityComponent },
-  { path: 'cc-search-apply', component: CcSearchAndApplyCcComponent },
   { path: 'guideline-value', component: GuidelineValueComponent },
   { path: 'user-manual', component: UserManualComponent},
   { path: 'tell-me-how', component: TellMeHowComponent},

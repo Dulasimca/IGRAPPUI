@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CardModule } from 'primeng/card';
 import { PanelModule } from 'primeng/panel';
 import { InputTextModule } from 'primeng/inputtext';
@@ -14,6 +14,7 @@ import { TabViewModule } from 'primeng/tabview';
 import { SidebarModule } from 'primeng/sidebar';
 import { MenuModule } from 'primeng/menu';
 import { CheckboxModule } from 'primeng/checkbox';
+import { OverlayPanelModule } from 'primeng/overlaypanel';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -41,6 +42,8 @@ import { KnowYourJurisdictionComponent } from './know-your-jurisdiction/know-you
 import { CitizenCharterComponent } from './citizen-charter/citizen-charter.component';
 import { DutyAndFeesComponent } from './duty-and-fees/duty-and-fees.component';
 import { PWDCalculatorComponent } from './Forms-Module/Others/pwd-calculator/pwd-calculator.component';
+import { LoginComponent } from './login/login.component';
+import { RestAPIService } from './Services/restAPI.service';
 
 @NgModule({
   declarations: [
@@ -69,6 +72,7 @@ import { PWDCalculatorComponent } from './Forms-Module/Others/pwd-calculator/pwd
     KnowYourJurisdictionComponent,
     CitizenCharterComponent,
     PWDCalculatorComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -76,6 +80,7 @@ import { PWDCalculatorComponent } from './Forms-Module/Others/pwd-calculator/pwd
     BrowserAnimationsModule,
     CardModule,
     FormsModule,
+    ReactiveFormsModule,
     PanelModule,
     InputTextModule,
     ButtonModule,
@@ -87,9 +92,10 @@ import { PWDCalculatorComponent } from './Forms-Module/Others/pwd-calculator/pwd
     TabViewModule,
     SidebarModule,
     MenuModule,
-    CheckboxModule
-  ],
-  providers: [],
+    CheckboxModule,
+    OverlayPanelModule,
+    ],
+  providers: [RestAPIService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

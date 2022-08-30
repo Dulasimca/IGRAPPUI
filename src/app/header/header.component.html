@@ -1,6 +1,6 @@
 <div class="col-12 md:col-12 lg:col-12 hdr-div">
     <div class="grid">
-        <div class="col-1 md:col-1 lg:col-1" style="margin: auto;" (click)="toggleMenu()">
+        <div *ngIf="isLoggedIn" class="col-1 md:col-1 lg:col-1" style="margin: auto;" (click)="toggleMenu()">
             <span>
                 <i class="pi pi-bars" style="font-size: 1.5rem;"></i>
             </span>
@@ -18,5 +18,5 @@
     </div>
 </div>
 <p-sidebar [(visible)]="display">
-    <p-menu [model]="items"></p-menu>
+    <p-menu [model]="items" ></p-menu>
 </p-sidebar>

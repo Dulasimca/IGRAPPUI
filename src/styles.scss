@@ -133,6 +133,7 @@ body {
     bottom: 0 !important;
     font-size: 14px;
     height: 45px;
+    position: fixed;
 }
 
 .p-float-label input:focus~label,
@@ -244,8 +245,28 @@ label {
     background: #0d3c61 !important;
     color: white !important;
 }
+.p-menu .p-menuitem-link:not(.p-disabled):hover {
+    background: var(--blue-800) !important;
+}
 .p-sidebar .p-sidebar-header .p-sidebar-close, .p-sidebar .p-sidebar-header .p-sidebar-icon {
     color: white !important;
 }
-
+.txt-center {
+    text-align: center !important;
+}
+.txt-end {
+    text-align: end !important;
+}
+.login-title {
+    text-align: center !important;
+    font-family: Times New Roman;
+    font-weight: 600;
+    font-size: 18px;
+}
+.txt-link {
+    color:#1769aa !important;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 14px;
+}
 // #2a6ca1 - milder blue
